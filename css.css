@@ -1,0 +1,32 @@
+
+@charset "utf-8";
+
+body {background-color: #F5F5DC;}
+
+#galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.kepek{
+    width: 100%;
+}
+img{
+    width: 95%;
+}
+main { max-width: 800px; margin: auto;}
+header {
+    display: grid;
+    grid-template-areas: 
+    "bal", "kep", "jobb"
+    "bal", "kep", "jobb"
+    "bal", "kep", "jobb";
+}
+#jobb {grid-area: jobb; max-width: 40px;  float: right;}
+#bal {grid-area: bal;  float: left;}
+.jobbgomb {max-width: 40px; max-height:500px;}
+.balgomb {max-width: 40px; max-height:500px;}
+#nagykep {grid-area: kep; margin: auto;}
+
+
+
+
